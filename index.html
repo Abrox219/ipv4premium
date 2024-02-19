@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferty Ipv4 Premium</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .offer {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+        }
+        .offer img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .buy-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .buy {
+            color: white;
+            background-color: blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: block;
+            margin: auto;
+            width: fit-content;
+            position: relative;
+        }
+        .buy::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px; /* Zmieniamy długość linii */
+            height: 2px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">OFERTY</h1>
+    <div class="container">
+        <div class="offer">
+            <img src="https://bravelearn.com/wp-content/uploads/2014/11/ipv4.jpg" alt="Oferta 1">
+            <div class="buy-container">
+                <div class="buy">BUY 12,50zł miesiecznie</div>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="https://bravelearn.com/wp-content/uploads/2014/11/ipv4.jpg" alt="Oferta 2">
+            <div class="buy-container">
+                <div class="buy">BUY 150zł rocznie </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
